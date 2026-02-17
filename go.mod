@@ -1,4 +1,4 @@
-module github.com/launchbynttdata/tf-azurerm-module_primitive-api_management_api
+module github.com/launchbynttdata/tf-azurerm-module_primitive-data_protection_backup_policy_blob_storage
 
 go 1.22
 
@@ -18,6 +18,7 @@ require (
 	cloud.google.com/go/iam v0.13.0 // indirect
 	cloud.google.com/go/storage v1.28.1 // indirect
 	github.com/Azure/azure-sdk-for-go/sdk/internal v1.2.0 // indirect
+	github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/dataprotection/armdataprotection v1.0.0 // indirect
 	github.com/AzureAD/microsoft-authentication-library-for-go v0.9.0 // indirect
 	github.com/agext/levenshtein v1.2.3 // indirect
 	github.com/apparentlymart/go-textseg/v13 v13.0.0 // indirect
