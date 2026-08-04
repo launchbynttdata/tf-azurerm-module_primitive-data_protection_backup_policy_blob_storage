@@ -5,7 +5,7 @@
 
 | Name | Version |
 |------|---------|
-| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | ~> 1.0 |
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | ~> 1.5 |
 | <a name="requirement_azurerm"></a> [azurerm](#requirement\_azurerm) | ~> 3.113 |
 
 ## Modules
@@ -54,5 +54,8 @@
 
 | Name | Description |
 |------|-------------|
-| <a name="output_policy_id"></a> [policy\_id](#output\_policy\_id) | n/a |
+| <a name="output_backup_policy_name"></a> [backup\_policy\_name](#output\_backup\_policy\_name) | Name of the Blob Storage backup policy. |
+| <a name="output_backup_vault_name"></a> [backup\_vault\_name](#output\_backup\_vault\_name) | Name of the Recovery Services vault used by the example. |
+| <a name="output_policy_id"></a> [policy\_id](#output\_policy\_id) | Resource ID of the Blob Storage backup policy. |
+| <a name="output_resource_group_name"></a> [resource\_group\_name](#output\_resource\_group\_name) | Name of the resource group containing the test resources. |
 <!-- END_TF_DOCS -->
