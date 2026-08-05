@@ -1,32 +1,39 @@
 variable "policy_name" {
-  type = string
+  description = "Name of the Blob Storage backup policy."
+  type        = string
 }
 
 variable "vault_id" {
-  type = string
+  description = "Resource ID of the Data Protection backup vault."
+  type        = string
 }
 
 variable "backup_repeating_time_intervals" {
-  type    = list(string)
-  default = null
+  description = "Repeating time intervals that define the backup schedule."
+  type        = list(string)
+  default     = null
 }
 
 variable "operational_default_retention_duration" {
-  type    = string
-  default = null
+  description = "Default retention duration for backups in the operational store."
+  type        = string
+  default     = null
 }
 
 variable "vault_default_retention_duration" {
-  type    = string
-  default = null
+  description = "Default retention duration for backups in the vault store."
+  type        = string
+  default     = null
 }
 
 variable "time_zone" {
-  type    = string
-  default = null
+  description = "Time zone used by the backup schedule."
+  type        = string
+  default     = null
 }
 
 variable "retention_rules" {
+  description = "Retention rules that define how backup instances are retained."
   type = list(object({
     name     = string
     priority = number
@@ -50,6 +57,7 @@ variable "retention_rules" {
 }
 
 variable "timeouts" {
+  description = "Timeouts for creating, reading, and deleting the backup policy."
   type = object({
     create = optional(string, "30m")
     read   = optional(string, "5m")

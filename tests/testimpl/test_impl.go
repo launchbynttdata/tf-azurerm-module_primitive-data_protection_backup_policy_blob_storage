@@ -75,3 +75,7 @@ func TestBackupPolicyBlobStorage(t *testing.T, ctx types.TestContext) {
 		)
 	})
 }
+
+func TestComposableReadonlyBackupPolicyBlobStorage(t *testing.T, ctx types.TestContext) {
+	TestBackupPolicyBlobStorage(t, ctx)
+}
